@@ -1,0 +1,45 @@
+'''
+Author: Cora Albers
+
+Credits: N/A
+
+Description: Write a function to calculate the distance between an input
+(x, y) point and the origin (0,0). Then write a function that prints whether or
+not the input (x, y) point is within a given radius, r.
+'''
+from math import sqrt
+
+def myDist(x, y):
+    '''(int, int) -> float
+
+    Calculates the distance between the origin (0, 0) and an input (x, y)
+    point using the Euclidean distance formula.
+
+    >>>
+
+    >>>
+
+    >>>
+    '''
+    distance = sqrt(x**2 + y**2)
+
+    return distance
+
+def isIn(x, y, r):
+    '''(int) -> None
+
+    Determines if the point (x, y) is within an input radius, r.
+
+    >>>
+
+    >>>
+
+    >>>
+    '''
+
+    distance = myDist(x, y)
+
+    if distance < r:
+        print('The point (' + str(x) + ',' + str(y) + ') is in the circle.')
+    else:
+        print('The point (' + str(x) + ',' + str(y) + ') is not in the circle.')

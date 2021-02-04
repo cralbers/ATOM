@@ -1,0 +1,9 @@
+console.log('hey');
+console.log('hello mama');
+
+//random word array
+const randomWords = ['elephant', 'mouse', 'headphones', 'marker', 'sister', 'colon', 'lungs', 'sticks'];
+const smallWords = randomWords.filter(word => {
+  return word.length < 6;
+});
+console.log(smallWords);
