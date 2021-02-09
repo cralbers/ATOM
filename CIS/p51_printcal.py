@@ -3,7 +3,7 @@ CIS 210 Project 5-1: Calendar
 
 Name: Cora Albers
 
-Credits:
+Credits: https://stackoverflow.com/questions/33624221/make-a-yearly-calendar-without-importing-a-calendar
 
 Description: Prints a calendar given an input month and year.
 '''
@@ -103,6 +103,8 @@ def calendar(month, year):
 
 def main(year):
     '''(int) -> calendar
+
+    Runs the calendar function for an input year.
     '''
     for i in range(1, 13):
         calendar(i, year)
